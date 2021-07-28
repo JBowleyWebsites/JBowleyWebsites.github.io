@@ -1,5 +1,11 @@
 html {
 
-  background: #555;
-  color: white;
+  background: #efefef;
+}
+
+body {
+
+  width: 80%;
+  background: white;
+  margin: auto;
 }
