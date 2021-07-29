@@ -229,7 +229,8 @@ footer {
 
   .me {
 
-    margin: 20% auto;
+    margin: auto;
+    margin-top: 20%;
   }
 
   .me h1 {
@@ -264,5 +265,11 @@ footer {
   #cta {
 
     font-size: 1.25em;
+  }
+
+  i {
+
+    font-size: .5em;
+    margin-bottom: 30%;
   }
 }
