@@ -1,11 +1,114 @@
+* {
+
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New";
+  scroll-behavior: smooth;
+}
+
 html {
 
   background: #efefef;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }
 
-body {
+html::-webkit-scrollbar {
 
-  width: 80%;
+  display: none;
+}
+
+main {
   background: white;
+}
+
+.main-content {
+
+  height: 200vh;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-areas:
+    'banner banner'
+    'bio bio'
+    'skills abme';
+  grid-template-rows: 50% 15% 30%;
   margin: auto;
+}
+
+.grid-box {
+
+}
+
+.banner {
+
+  grid-area: banner;
+  background: url("background.jpeg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  box-shadow: inset 0 0 0 2000px rgba(0,0,0,.75);
+}
+
+.banner-main {
+
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.header {
+
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 20px;
+}
+
+a {
+
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.25em;
+}
+
+.me {
+
+  flex: 1;
+  margin: 200px;
+}
+
+.btn a {
+
+  font-size: 3em;
+}
+
+.banner h1 {
+
+  color: white;
+  font-size: 6em;
+  padding: 20px;
+}
+
+.banner h2 {
+
+  color: white;
+  font-size: 2em;
+}
+
+
+.bio {
+
+  grid-area: bio;
+}
+
+.skills {
+
+  grid-area: skills;
+}
+
+.abme {
+
+  grid-area: abme;
 }
