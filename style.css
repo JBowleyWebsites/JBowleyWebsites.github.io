@@ -25,7 +25,7 @@ html::-webkit-scrollbar {
 .main-content {
 
   height: 100vh;
-  grid-gap: 50px;
+  grid-gap: 20px;
   display: grid;
   grid-template-areas:
     'banner banner';
@@ -80,7 +80,7 @@ p {
   margin: auto;
   padding: 40px;
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 40px;
   grid-template-areas:
     'bio bio'
     'skills abme';
@@ -178,4 +178,91 @@ footer {
   text-align: center;
   color: white;
   background: #040404;
+}
+
+@media (max-width: 768px) {
+
+  .bFold {
+
+    grid-template-areas:
+      'bio'
+      'skills'
+      'abme';
+    margin: auto;
+    padding: 0;
+  }
+
+  main {
+
+    padding: 0;
+  }
+
+  .grid-box {
+    margin: 10% auto;
+    width: 90%;
+  }
+
+  .grid-box h3 {
+
+    font-size: 1.5em;
+  }
+
+  .grid-box p {
+
+    font-size: .8em;
+  }
+
+  .main-content {
+
+    height: 50vh;
+  }
+
+  .banner {
+
+      margin: 0;
+      height: 50vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      text-align: center;
+  }
+
+  .me {
+
+    margin: 20% auto;
+  }
+
+  .me h1 {
+
+    font-size: 2em;
+
+  }
+
+  .me h2 {
+
+    font-size: 1.5em;
+  }
+
+  nav {
+
+    margin: auto;
+    width: 100%;
+    display: block;
+    float: none;
+  }
+
+  nav a {
+
+    font-size: .8em;
+  }
+
+  .cta {
+
+    width: 50%;
+  }
+
+  #cta {
+
+    font-size: 1.25em;
+  }
 }
