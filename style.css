@@ -8,9 +8,13 @@
 
 html {
 
-  background: #efefef;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
+}
+
+body {
+
+  background: #090909;
 }
 
 html::-webkit-scrollbar {
@@ -18,25 +22,38 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-main {
-  background: white;
-}
-
 .main-content {
 
-  height: 200vh;
-  grid-gap: 20px;
+  height: 100vh;
+  grid-gap: 50px;
   display: grid;
   grid-template-areas:
-    'banner banner'
-    'bio bio'
-    'skills abme';
-  grid-template-rows: 50% 15% 30%;
+    'banner banner';
+  grid-template-rows: 50% 30% 20%;
   margin: auto;
 }
 
 .grid-box {
 
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 10px white;
+}
+
+h3 {
+
+  padding: 20px;
+  font-size: 2em;
+  color: #A81600;
+}
+
+p {
+
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  font-size: 1.1em;
+  line-height: 35px;
 }
 
 .banner {
@@ -57,12 +74,41 @@ main {
   align-items: center;
 }
 
+.bFold {
+
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-areas:
+    'bio bio'
+    'skills abme';
+}
+
 .header {
 
   position: absolute;
   display: flex;
   right: 0;
   top: 20px;
+}
+
+.cta {
+
+  border: 2px #f53618 outset;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+#cta {
+
+  color: #f53618;
+  font-size: 2em;
+  font-weight: 900;
+  text-shadow: 0 1px 2px black;
 }
 
 a {
@@ -87,19 +133,20 @@ a {
 .banner h1 {
 
   color: white;
-  font-size: 6em;
+  font-size: 5em;
   padding: 20px;
 }
 
 .banner h2 {
 
-  color: white;
+  color: #F7614A;
   font-size: 2em;
 }
 
 
 .bio {
 
+  margin-top: 40px;
   grid-area: bio;
 }
 
@@ -108,7 +155,27 @@ a {
   grid-area: skills;
 }
 
+.skills ul {
+
+  width: 40%;
+  padding: 20px;
+  margin: auto;
+  text-align: left;
+}
+
+.skills li {
+
+  line-height: 30px;
+}
+
 .abme {
 
   grid-area: abme;
+}
+
+footer {
+
+  text-align: center;
+  color: white;
+  background: #040404;
 }
